@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CausalFunnel Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home">Northstar Goods</a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#cart">Cart <span id="cart-count">0</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <p class="eyebrow">Thoughtful goods for everyday rituals</p>
+        <h1>Make space for what matters.</h1>
+        <p>Small-batch essentials designed to make ordinary moments feel considered.</p>
+        <a class="button" href="#products">Explore the collection</a>
+      </section>
+      <section class="content-section" id="products">
+        <div class="section-heading">
+          <div><p class="eyebrow">The collection</p><h2>Made to be used.</h2></div>
+          <p>Durable materials, calm colors, and details that reward daily use.</p>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+      <section class="cart-section" id="cart">
+        <div><p class="eyebrow">Your bag</p><h2>Ready when you are.</h2></div>
+        <p id="cart-message">Your bag is empty. Add something from the collection.</p>
+        <button class="button" id="checkout-button" type="button">Continue to checkout</button>
+      </section>
+    </main>
+
+    <footer><span>Northstar Goods</span><span>Demo store for CausalFunnel Analytics</span></footer>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
